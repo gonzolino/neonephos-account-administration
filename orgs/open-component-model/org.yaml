@@ -14,12 +14,10 @@ orgs:
     - alexbass01
     - cbrgm
     - ChrisSchneider
-    - dnaeon
     - iljaweis
     - jneisener
     - lukasgr90
     - matthiasbruns
-    - Michael5601
     - morri-son
     - olzemal
     - piotrjanik
@@ -46,10 +44,8 @@ orgs:
         - alexbass01
         - cbrgm
         - ChrisSchneider
-        - dnaeon
         - iljaweis
         - lukasgr90
-        - Michael5601
         - olzemal
         - rebEllieous
         - trevex
@@ -76,8 +72,6 @@ orgs:
             - AleksandarSavchev
             - alexbass01
             - ChrisSchneider
-            - dnaeon
-            - Michael5601
             privacy: closed
       Maintainers:
         description: OCM project maintainers
