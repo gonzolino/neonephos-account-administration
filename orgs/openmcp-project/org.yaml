@@ -1,0 +1,128 @@
+# Org admins, members, teams and team membership are managed here.
+# Team -> repository grants and CODEOWNERS are managed separately by project tooling.
+# Taskfile.yml disables --fix-team-repos for this org; do not add repos blocks.
+# This is the final shared-team + SIG state. Stage the migration before applying:
+# create the new teams alongside legacy teams, apply repository access and
+# CODEOWNERS through project tooling, then retire legacy teams.
+
+orgs:
+  openmcp-project:
+    default_repository_permission: read
+    admins:
+      - guewa
+      - jakobmoellerdev
+      - LF-Europe
+      - maximilianbraun
+      - maximiliantech
+      - ntnn
+      - reshnm
+      - ValentinGerlach
+    members:
+      - andreaskienle
+      - AndresNico
+      - christophrj
+      - dattito
+      - Diaphteiros
+      - dwlou
+      - enrico-kaack-comp
+      - frewilhelm
+      - gergely-szabo-sap
+      - GenosseOtt
+      - Hubert-Szczepanski-SAP
+      - In-Ko
+      - Kukkerem
+      - lucasgoral
+      - matteokosina
+      - MichaelSp
+      - mpechkurov
+      - n3rdc4ptn
+      - rdksap
+      - robertgraeff
+      - SatabdiG
+      - schlingemann
+      - sdischer-sap
+      - sk31337
+      - Skarlso
+    teams:
+      contributors:
+        description: OpenControlPlane contributors
+        privacy: closed
+        members:
+          - ValentinGerlach
+          - reshnm
+          - maximiliantech
+          - guewa
+          - n3rdc4ptn
+          - andreaskienle
+          - AndresNico
+          - christophrj
+          - dattito
+          - Diaphteiros
+          - dwlou
+          - enrico-kaack-comp
+          - frewilhelm
+          - gergely-szabo-sap
+          - GenosseOtt
+          - Hubert-Szczepanski-SAP
+          - In-Ko
+          - Kukkerem
+          - lucasgoral
+          - matteokosina
+          - MichaelSp
+          - mpechkurov
+          - rdksap
+          - robertgraeff
+          - SatabdiG
+          - schlingemann
+          - sdischer-sap
+          - sk31337
+          - Skarlso
+      # Roles and Responsibilities:
+      # https://github.com/openmcp-project/community/blob/main/sig-core/README.md
+      sig-core-approvers:
+        description: SIG Core technical approvers
+        privacy: closed
+        members:
+          - Diaphteiros
+          - maximiliantech
+      sig-core-owners:
+        description: SIG Core governance owners
+        privacy: closed
+        members:
+          - rdksap
+          - maximiliantech
+      # Roles and Responsibilities:
+      # https://github.com/openmcp-project/community/blob/main/sig-extensibility/README.md
+      sig-extensibility-approvers:
+        description: SIG Extensibility technical approvers
+        privacy: closed
+        members:
+          - christophrj
+          - maximiliantech
+      sig-extensibility-owners:
+        description: SIG Extensibility governance owners
+        privacy: closed
+        members:
+          - christophrj
+          - maximiliantech
+      # Current chair and voting members (not emeritus members):
+      # https://github.com/openmcp-project/community/blob/main/steering/OWNERS.md
+      tsc:
+        description: OpenControlPlane Technical Steering Committee
+        privacy: closed
+        members:
+          - maximilianbraun
+          - GenosseOtt
+          - In-Ko
+          - maximiliantech
+          - reshnm
+          - ValentinGerlach
+      # Also referenced by live CODEOWNERS; retain until its scope is reviewed.
+      sig-ui-approvers:
+        description: Approvers for UI projects
+        privacy: closed
+        members:
+          - n3rdc4ptn
+          - andreaskienle
+          - Hubert-Szczepanski-SAP
+          - lucasgoral
