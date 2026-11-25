@@ -233,6 +233,7 @@ orgs:
         - OrlinVasilev
         - damyan
         - hardl
+        - gonzolino
         privacy: closed
         repos:
           compliance-scan: maintain
